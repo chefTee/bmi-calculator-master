@@ -1,0 +1,84 @@
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   box-sizing: border-box;
+   font-family: 'Inter-Regular';
+}
+h3{
+   font-family: serif;
+}
+:root {
+  --white: #ffffff;
+  --blue-lightest: #e7f5fe;
+  --blue-lighter: #d7e7fe;
+  --blue-very-light: #f6fbff;
+
+  --gray-muted: rgb(174, 171, 171);
+
+  --brand-purple: #9c27b0;
+  --button-blue: #3460f7;
+  --blue-accent: #587dff;
+
+  --transparent: rgba(0, 0, 0, 0);
+}
+
+@font-face{
+   font-family: 'Inter-Regular';
+   src: url(/assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face{
+   font-family:  'Inter-SemiBold';
+   src: url(/assets/fonts/static/Inter-SemiBold.ttf);
+}
+body{
+   overflow-x: hidden;
+   height: 100vh;
+   max-width: 100%;
+}
+.head-section{
+   margin-bottom: 5%;
+}
+.head-section .bmi-head-content{
+   display: flex;
+}
+.bmi-head-content .bmi-summary{
+   background-image: linear-gradient( to right, #e8f4fc, #cfe2fc, #c9deef);
+   border-bottom-right-radius: 15px;
+   padding-left: 4%;
+   padding-bottom: 14%;
+   width: 75%;
+}
+.bmi-summary .logo img{
+   display: block;
+   padding-top: 4%;
+   width: 5%;
+}
+.bmi-summary .bmi-summary-info{
+   margin-top: 8%;
+   width: 50%;
+}
+.bmi-summary-info .title{
+   font-size: 3.5em;
+   font-weight: bolder;
+   margin-bottom: 6%;
+}
+.bmi-summary-info .info{
+   font-size: 15px;
+   font-weight: normal;
+   color: rgb(137, 136, 136);
+}
+.bmi-head-content .bmi-calculator{
+   width: 35%;
+   background-color: #fff;
+   border-radius: 10px;
+   position: absolute;
+   top: 25%;
+   right: 20%;
+   padding: 1.5rem 1rem;
+   box-shadow: 0px 2px 0px 2px #c9deef;
+}
+ .bmi-calculator .instruction{
+   font-size: 18px;
+   font-weight: bolder;
+ }
