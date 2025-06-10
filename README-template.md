@@ -54,4 +54,4 @@ I want to lear React, and better wield with css grid.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/zorandz)
+- Frontend Mentor - [@yourusername]()
