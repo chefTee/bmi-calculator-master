@@ -24,42 +24,102 @@
     <p class="instruction">Enter your details below</p>
     <form action="#">
     <div class="bmi-units-section">
-      <label for="">Metric</label>
-      <input type="radio" name="metric">
-      <label for="">Imperial</label>
-      <input type="radio" name="imperial">
+      <label for="metric" class="metric-button">
+        <input type="radio" name="" id="metric" class="radio-m-button">
+        <div class="metric-radio-button"></div>
+        Metric
+      </label>
+
+      <label for="imperial" class="imperial-button">
+        <input type="radio" name="" id="imperial" class="radio-i-button">
+        <div class="imperial-radio-button"></div>
+        Imperial
+      </label>
     </div>
+
     <div class="bmi-user-values-section">
-      <div class="metric-values-section"></div>
-      <div class="imperial-values-section"></div>
+      <div class="metric-values-section">
+        <div class="height-container">
+          <label for="height" class="height-label">Height</label>
+          <div class="height-input-container">
+            <input type="number" placeholder="0" inputmode="numeric" name="height" class="user-height">
+            <span class="height-unit">cm</span>
+          </div>
+        </div>
+
+        <div class="weight-container">
+          <label for="weight" class="weight-label">Weight</label>
+          <div class="weight-input-container">
+            <input type="number"  placeholder="0" inputmode="numeric" name="weight" class="user-weight">
+            <span class="weight-unit">kg</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="imperial-values-section hide">
+        <div class="imperial-height-section">
+          <label for="imperial-height" class="height-label">Height</label>
+          <div class="height-input-container">
+            <div class="ft-input-container">
+            <input type="number" placeholder="0" inputmode="numeric" name="ft-value" class="user-ft">
+            <span class="imperial-height-ft">ft</span>
+          </div>
+          <div class="in-input-container">
+            <input type="number" placeholder="0" inputmode="numeric" name="in-value" class="user-in">
+            <span class="imperial-height-in">in</span>
+          </div>
+          </div>
+
+        </div>
+
+        <div class="imperial-weight-section">
+          <label for="imperial-weight" class="weight-label">Weight</label>
+          <div class="weight-input-container">
+            <div class="st-input-container">
+              <input type="number" placeholder="0" inputmode="numeric" name="st-value" class="user-st">
+              <span class="imperial-weight-st">st</span>
+            </div>
+            <div class="lbs-input-container">
+              <input type="number" placeholder="0" inputmode="numeric" name="lbs-value" class="user-lbs">
+              <span class="imperial-weight-lbs">lbs</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
     </form>
-    <div class="bmi-welcome-and-result-section">
+
+    <div class="bmi-welcome-and-result-section ">
       <div class="welcome-section">
-        <h3>Welcome!</h3>
-        <p>Enter your height and weight and you'll see your BMI result here</p>
+        <p class="greetings">Welcome!</p>
+        <p class="instruction">Enter your height and weight and you'll see your BMI result here</p>
       </div>
-      <div class="result-section">
+      <div class="result-section hide">
         <div class="bmi-result">
-          <p>Your BMI is... </p>
-          <p class="bmi-result-value"></p>
+          <p class="result-intro">Your BMI is... </p>
+          <p class="bmi-result-value">19.6</p>
         </div>
         <div class="bmi-result-details">
-          <p>Your BMI suggests you're <span class="bmi-status"></span>. Your ideal weight is between <span class="bmi-range-value"></span></p>
+          <p>Your BMI suggests you're <span class="bmi-status"></span>Your ideal weight is between <span class="bmi-range-value"></span></p>
         </div>
       </div>
     </div>
   </div>
   </div>
 </section>
+
+<!-- PAGE ARROW -->
+<img class="page-arrow" src="./assets/images/pattern-curved-line-left.svg" alt="curved line"> 
+
 <!-- BMI RESULT MEANING SECTION -->
 <section class="bmi-result-meaning-section">
   <div class="bmi-image">
     <img src="./assets/images/image-man-eating.webp" alt="">
   </div>
   <div class="result-meaning">
-    <h3>What your BMI result means</h3>
-    <p> A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
+    <p class="meaning-title">What your BMI result means</p>
+    <p class="meaning-summary"> A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a
         healthy weight may lower your chances of experiencing health issues later on,
         such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced
         fat and sugar content, incorporating ample fruits and vegetables. Additionally,
@@ -67,29 +127,31 @@
         five days a week.</p>
   </div>
 </section>
+
 <!-- BMI HEALTHY ATTRIBUTES SECTION -->
 <section class="bmi-healthy-attributes">
   <div class="attr">
     <img src="./assets/images/icon-eating.svg" alt="healthy food">
-    <h3>Healthy eating</h3>
-    <p>Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.</p>
+    <p class="title">Healthy eating</p>
+    <p class="attr-meaning">Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.</p>
   </div>
   <div class="attr">
     <img src="./assets/images/icon-exercise.svg" alt="exercise-img">
-    <h3>Regular exercise</h3>
-    <p>Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.</p>
+    <p class="title">Regular exercise</p>
+    <p class="attr-meaning">Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.</p>
   </div>
   <div class="attr">
     <img src="./assets/images/icon-sleep.svg" alt="sleep">
-    <h3>Adequate sleep</h3>
-    <p>Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.</p>
+    <p class="title">Adequate sleep</p>
+    <p class="attr-meaning">Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.</p>
   </div>
 </section>
+
 <!-- BMI LIMITATIONS SECTION -->
 <section class="bmi-limitations-section">
   <div class="limits">
-    <h3>Limitations of BMI</h3>
-    <p>Although BMI is often a practical indicator of healthy weight, it is not suited for
+    <p class="main-limits-title">Limitations of BMI</p>
+    <p class="main-limits-summary">Although BMI is often a practical indicator of healthy weight, it is not suited for
     every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
   </div>
   <div class="limits">
