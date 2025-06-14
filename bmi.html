@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./bmi.css">
   <title>Frontend Mentor | Body Mass Index Calculator</title>
 </head>
-<!-- BMI HEAD SECTION -->
+<body>
+  <!-- BMI HEAD SECTION -->
 <section class="head-section">
   <div class="bmi-head-content">
     <div class="bmi-summary">
@@ -24,21 +25,21 @@
     <p class="instruction">Enter your details below</p>
     <form action="#">
     <div class="bmi-units-section">
-      <label for="metric" class="metric-button">
-        <input type="radio" name="" id="metric" class="radio-m-button">
+      <label class="metric-button" id="metric-button">
+        <input type="radio" name="unit" id="metric" class="radio-m-button" checked>
         <div class="metric-radio-button"></div>
         Metric
       </label>
 
-      <label for="imperial" class="imperial-button">
-        <input type="radio" name="" id="imperial" class="radio-i-button">
+      <label class="imperial-button" id="imperial-button">
+        <input type="radio" name="unit" id="imperial" class="radio-i-button">
         <div class="imperial-radio-button"></div>
         Imperial
       </label>
     </div>
 
     <div class="bmi-user-values-section">
-      <div class="metric-values-section ">
+      <div class="metric-values-section " id="metric-values-section">
         <div class="height-container">
           <label for="height" class="height-label">Height</label>
           <div class="height-input-container">
@@ -56,7 +57,7 @@
         </div>
 
       </div>
-      <div class="imperial-values-section hide">
+      <div class="imperial-values-section hide" id="imperial-values-section">
         <div class="imperial-height-section">
           <label for="imperial-height" class="height-label">Height</label>
           <div class="height-input-container">
@@ -222,4 +223,6 @@
     Coded by <a href="https://x.com/taiwosharon36">Taiwo Temitope Sharon</a>.
   </p>
 </footer>
+<script src="./bmi.js"></script>
+</body>
 </html>
